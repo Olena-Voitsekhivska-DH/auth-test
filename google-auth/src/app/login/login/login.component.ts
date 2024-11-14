@@ -24,10 +24,9 @@ export class LoginComponent implements OnInit {
 
       const client = this.google.accounts.oauth2.initCodeClient ({
       client_id: '574472089104-tbher5us71us3obvvan9g90ecsuqpmdm.apps.googleusercontent.com',
-      scope: 'https://www.googleapis.com/auth/userinfo.profile \
-       https://www.googleapis.com/auth/userinfo.email',
+      scope: 'email',
       ux_mode: 'redirect',
-      redirect_uri: "https://auth-test-neon.vercel.app/success/",
+      redirect_uri: "https://auth-test-neon.vercel.app/success",
       });
     
     client.requestCode();
