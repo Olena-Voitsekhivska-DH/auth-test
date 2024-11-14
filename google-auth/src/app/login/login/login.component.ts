@@ -27,7 +27,7 @@ export class LoginComponent implements OnInit {
       scope: 'https://www.googleapis.com/auth/userinfo.profile \
        https://www.googleapis.com/auth/userinfo.email',
       ux_mode: 'redirect',
-      redirect_uri: "https://auth-test-neon.vercel.app/success",
+      redirect_uri: "https://auth-test-neon.vercel.app/success/",
       });
     
     client.requestCode();
